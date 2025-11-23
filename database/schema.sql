@@ -1,9 +1,6 @@
 -- Study Buddy Database Schema
 -- Execute this in your Supabase SQL editor
 
--- Enable Row Level Security
-ALTER TABLE auth.users ENABLE ROW LEVEL SECURITY;
-
 -- Users table (extends Supabase auth.users)
 CREATE TABLE IF NOT EXISTS public.users (
   id UUID REFERENCES auth.users(id) ON DELETE CASCADE PRIMARY KEY,
