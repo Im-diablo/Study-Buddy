@@ -60,8 +60,6 @@ npm run dev
 Execute these SQL commands in your Supabase SQL editor:
 
 ```sql
--- Enable Row Level Security
-ALTER TABLE auth.users ENABLE ROW LEVEL SECURITY;
 
 -- Users table (extends Supabase auth.users)
 CREATE TABLE public.users (
